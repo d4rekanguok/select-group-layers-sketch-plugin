@@ -3,7 +3,7 @@ function isLayer(layer) {
 }
 
 function selectChildLayers(group) {
-  group.iterateWithFilter(isLayer, function(layer) {
+  group.iterate(function(layer) {
     layer.addToSelection();
   });
 }
